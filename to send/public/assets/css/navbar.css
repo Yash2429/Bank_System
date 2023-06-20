@@ -1,0 +1,40 @@
+nav{
+    background-color: rgba(74 96 104);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.first-part{
+    display: flex;
+    align-items: center;
+   padding: 20px;
+}
+.logo{
+    width: 90px;
+    border-radius: 50%;
+    margin: 8px;
+}
+.first-part h2{
+    font-size: 48px;
+    font-weight: 900;
+    margin: 10px 28px;
+    color: white;
+}
+.second-part ul{
+    display: flex;
+    padding-left: 12px;
+}
+.items{
+    list-style: none;
+    margin: 0 15px;
+    padding-bottom: 20px;
+}
+.items a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+.items a:hover{
+    color: wheat;
+    border-bottom: 2px solid white;
+    cursor: pointer;
+}

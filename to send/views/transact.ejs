@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Bank</title>
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/table.css">
+    <link rel="stylesheet" href="/assets/css/transact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="first-part">
+            <img src="/assets/images/bg/logo.png" class="logo">
+            <h2>PUBLIC BANK </h2>
+        </div>
+        <div class="second-part">
+            <ul>
+                <li class="items"><a href="/">HOME</a></li>
+                <li class="items"><a href="https://internship.thesparksfoundation.info/">ABOUT US</a></li>
+                <li class="items"><a href="/createUser">CREATE USER</a></li>
+                <li class="items"><a href="/users">USERS</a></li>
+                <li class="items"><a href="/history">USER HISTORY</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="main-part">
+        <h2>Money Transfer</h2>
+        <div class="transaction">
+            <div class="ipt-part">
+                Transfer from: 
+                <input type="text" id="tp-from" class="input-bar ">
+            </div>
+            <div class="ipt-part">
+                Transfer To: 
+                <input type="text" id="tp-to" class="input-bar ">
+            </div>
+            <div class="ipt-part">
+                Amount: 
+                <input type="number" id="amnt" class="input-bar ">
+            </div>
+            <button id="btn" onclick="transferAmount()">Transfer</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="/assets/js/worker.js"></script>
+
+
+</body>
+</html>

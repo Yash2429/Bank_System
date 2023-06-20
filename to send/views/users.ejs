@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Bank</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/users.css">
+    <link rel="stylesheet" href="/assets/css/navbar.css">
+    <link rel="stylesheet" href="/assets/css/table.css">
+</head>
+<body>
+    <nav>
+        <div class="first-part">
+            <img src="/assets/images/bg/logo.png" class="logo">
+            <h2>PUBLIC BANK </h2>
+        </div>
+        <div class="second-part">
+            <ul>
+                <li class="items"><a href="/">HOME</a></li>
+                <li class="items"><a href="https://internship.thesparksfoundation.info/">ABOUT US</a></li>
+                <li class="items"><a href="/createUser">CREATE USER</a></li>
+                <li class="items"><a href="/users">USERS</a></li>
+                <li class="items"><a href="/history">USER HISTORY</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="data">
+        <div class="button-part">
+            <button class="btn"><a href="/transactions">Transfer Money</a></button>
+        </div>
+        <div class="table-part">
+            <table class="content-table">
+                <thead>
+                    <tr>
+                    <th>S.No.</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Balance</th>
+                    <th>Account Number</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <%  let i = 0;
+                     data.map ((items)=>{
+                        i++; %>
+                    <tr>
+                        <td><%=i%></td>
+                        <td><%=items.name%></td>
+                        <td><%=items.email%></td>
+                        <td><%=items.balance%></td>
+                        <td><%=items.accNumber%></td>
+                    </tr>
+               <% }) %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

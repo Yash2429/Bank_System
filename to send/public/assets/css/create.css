@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+}
+.registration-part{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('/assets/images/bg/account.avif'),no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+.registration-part h2{
+    margin: 60px;
+}
+
+.forms{
+    width: 360px;
+    height: 335px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 8px;
+    flex-direction: column;
+}
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ipt{
+    width: 200px;
+    height: 40px;
+    background:transparent;
+    border: 2px solid gray;
+    outline: none;
+    margin: 12px;
+}
+#btn{
+    background-color: rgb(17, 177, 17);
+    border: 2px solid rgb(17, 177, 17);
+    width: 120px;
+    height: 40px;
+    margin: 18px;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+#btn:hover{
+    cursor: pointer;
+}
